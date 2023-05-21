@@ -1,0 +1,11 @@
+.text-editor-body{
+    height: calc(100% - 1rem);
+    width: calc(100% - 1rem);
+    border-top: 1px solid #c4c7c5;
+    border-left: 1px solid #c4c7c5;
+    margin: 1rem 0rem 0rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+}

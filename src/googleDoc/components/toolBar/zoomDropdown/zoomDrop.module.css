@@ -1,0 +1,31 @@
+.btnCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.inputSizeS{
+    width: 48px;
+    min-width: 48px !important;
+}
+.inputSizeM{
+    width: 108px;
+    min-width: 108px !important;
+}
+.btnCont input{
+    height: 28px !important;
+    color:#1f1f1f;
+    font-size: 14px !important;
+    padding: 1px 4px ;
+    background: transparent;
+    border: 1px solid transparent !important;
+    cursor: pointer;
+}
+.btnCont input:focus{
+    border: 1px solid transparent !important;
+    outline: none;
+}
+.btnCont:hover{
+    background-color: rgba(68, 71, 70, 0.078);
+    cursor: pointer;
+}

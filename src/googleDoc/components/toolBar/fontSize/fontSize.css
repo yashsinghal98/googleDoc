@@ -1,0 +1,33 @@
+.fontSizeInput{
+    width: 32px !important;
+    height: 24px !important;
+    text-align: center;
+    color: #1f1f1f;
+    font-size: 14px !important;
+    margin: 0px 10px;
+    border: 1px solid transparent !important;
+}
+.fontCont{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.imgCustom{
+    color:rgba(0,0,0,.7);
+    font-size: 20px;
+}
+.imgCustom:hover{
+    background-color: rgba(68, 71, 70, 0.078);
+    cursor: pointer;
+}

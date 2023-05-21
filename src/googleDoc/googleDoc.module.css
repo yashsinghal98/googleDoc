@@ -1,0 +1,11 @@
+.lowerPart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.textPart{
+    width: 95%;
+}
+.rightSideBar{
+    width: 5%;
+}

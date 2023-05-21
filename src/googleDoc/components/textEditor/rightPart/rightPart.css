@@ -1,0 +1,17 @@
+.textArea-cont{
+    width: calc(100% - 292px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.textArea-body{
+    height: 1056px;
+    width: 816px;
+    background-color: #ffffff;
+    border: 1px solid #c4c7c5;
+    padding: 3rem 4rem;
+}
+.textArea-body:focus{
+    border: 1px solid #c4c7c5;
+    outline: none;
+}

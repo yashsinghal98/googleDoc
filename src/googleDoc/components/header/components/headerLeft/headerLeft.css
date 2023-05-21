@@ -1,0 +1,51 @@
+.body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 7px 0px 4px 7px;
+}
+.leftImgCont{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftImgCont-img{
+    font-size: 50px;
+    color:#2684FC;
+    cursor: default;
+}
+.dropDownItems{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dropDownItems div{
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    color:#202124;
+    padding: 2px 7px;
+}
+.dropDownItems div:hover{
+    background-color: #e8ebee;
+}
+.doc-title{
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    width:156px;
+    font-size: 18px;
+    line-height: 22px;
+    color:#1f1f1f;
+}
+.doc-title:focus{
+    color:#1f1f1f;
+}
+.name-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+

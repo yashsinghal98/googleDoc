@@ -1,0 +1,12 @@
+.sideBarCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sideBarCol img{
+    height: 40px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
