@@ -21,14 +21,16 @@
     justify-content: flex-start;
     align-items: center;
 }
-.dropDownItems div{
+
+.title-dropdown{
     cursor: pointer;
     font-size: 14px;
     border-radius: 4px;
     color:#202124;
     padding: 2px 7px;
+    position: relative;
 }
-.dropDownItems div:hover{
+.dropDownItems .title-dropdown:hover{
     background-color: #e8ebee;
 }
 .doc-title{

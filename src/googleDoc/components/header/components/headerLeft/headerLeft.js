@@ -1,8 +1,11 @@
 import "./headerLeft.css";
-import React , {useState} from "react";
+import React, { useState } from "react";
+import { dropDownTabs, dropDownItems } from "./constant";
+import Dropdown from "../../../common/dropDown";
 
 export default function HeaderLeft() {
-    const [titleDoc,setTitleDoc] = useState('');
+  const [titleDoc, setTitleDoc] = useState("");
+  const [showDropDown,setShowDropDown]= useState(false);
   return (
     <div className="body">
       <div className="leftImgCont">
@@ -14,8 +17,8 @@ export default function HeaderLeft() {
             type="text"
             placeHolder="Untitled Document"
             className="doc-title"
-            onInput={(e)=>{
-                setTitleDoc(e.target.vale);
+            onInput={(e) => {
+              setTitleDoc(e.target.vale);
             }}
             value={titleDoc}
           ></input>
@@ -23,14 +26,15 @@ export default function HeaderLeft() {
         </div>
         <div>
           <div className="dropDownItems">
-            <div>File</div>
-            <div>Edit</div>
-            <div>View</div>
-            <div>Insert</div>
-            <div>Format</div>
-            <div>Tools</div>
-            <div>Extensions</div>
-            <div>Help</div>
+            {dropDownItems.map((item, index) => (
+              <div key={index} className="title-dropdown" onClick={()=>setShowDropDown(index)}>
+                {item}
+                <Dropdown
+                  dropDownList={dropDownTabs[item]}
+                  isOpen={showDropDown===index}
+                />{" "}
+              </div>
+            ))}
           </div>
         </div>
       </div>
