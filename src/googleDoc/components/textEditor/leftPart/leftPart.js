@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./leftPart.css";
 export default function LeftPart() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <div className="left-part-body">
       {!isOpen ? (

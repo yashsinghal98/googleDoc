@@ -1,11 +1,31 @@
 import "./headerLeft.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { dropDownTabs, dropDownItems } from "./constant";
 import Dropdown from "../../../common/dropDown";
+import { useRef } from "react";
 
 export default function HeaderLeft() {
   const [titleDoc, setTitleDoc] = useState("");
   const [showDropDown,setShowDropDown]= useState(false);
+  const wrapperRef = useRef(null);
+  
+  useEffect(()=>{
+    const handleOutsideClick = (event)=>{
+      if(wrapperRef?.current&&!wrapperRef.current?.contains(event.target)){
+        onOutside(event);
+      }
+    }
+    document.addEventListener('click',handleOutsideClick);
+    return ()=>{
+      document.removeEventListener('click',handleOutsideClick)
+    }
+  },[])
+
+  const onOutside = () => {
+    setShowDropDown(false);
+  }
+
+
   return (
     <div className="body">
       <div className="leftImgCont">
@@ -25,7 +45,7 @@ export default function HeaderLeft() {
           <span class="material-icons-outlined">star_border</span>
         </div>
         <div>
-          <div className="dropDownItems">
+          <div className="dropDownItems" ref={wrapperRef}>
             {dropDownItems.map((item, index) => (
               <div key={index} className="title-dropdown" onClick={()=>setShowDropDown(index)}>
                 {item}

@@ -12,6 +12,7 @@ export const dropDownTabs = {
   File: {
     New: {
       imgEle: <span class="material-icons image-color">article</span>,
+      hasDropDown:true
     },
     Open: {
       imgEle: <span class="material-icons image-color">folder</span>,
@@ -21,12 +22,15 @@ export const dropDownTabs = {
     },
     Share: {
       imgEle: <span class="material-icons image-color">person_add_alt</span>,
+      hasDropDown:true
     },
     Email: {
       imgEle: <span class="material-icons image-color">email</span>,
+      hasDropDown:true
     },
     Download: {
       imgEle: <span class="material-icons image-color">download</span>,
+      hasDropDown:true
     },
     Rename: {
       imgEle: (
@@ -51,6 +55,7 @@ export const dropDownTabs = {
     },
     Language: {
       imgEle: <span class="material-icons-outlined image-color">language</span>,
+      hasDropDown:true
     },
     "Page Setup": {
       imgEle: (
@@ -112,7 +117,8 @@ export const dropDownTabs = {
     Mode:{
         imgEle:<span class="material-icons-outlined image-color">
         mode_edit
-        </span>
+        </span>,
+        hasDropDown:true
     },
     'Show print layout':{
         imgEle:<span class="material-icons-outlined image-color">
@@ -134,17 +140,20 @@ export const dropDownTabs = {
     Image:{
         imgEle:<span class="material-icons-outlined image-color">
         image
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Table:{
         imgEle:<span class="material-icons-outlined image-color">
         table_chart
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Drawing:{
         imgEle:<span class="material-icons-outlined image-color">
         draw
         </span>
+        ,hasDropDown:true
     },
     Chart:{
         imgEle:<span class="material-icons-outlined image-color">
@@ -159,12 +168,14 @@ export const dropDownTabs = {
     Emojis:{
         imgEle:<span class="material-icons-outlined image-color">
         mood
-        </span>
+        </span>,
+        hasDropDown:true
     },
     'Smart Chips':{
         imgEle:<span class="material-icons-outlined image-color">
         smart_toy
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Dropdown:{
         imgEle:<span class="material-icons-outlined image-color">
@@ -179,24 +190,28 @@ export const dropDownTabs = {
     Watermark:{
         imgEle:<span class="material-icons-outlined image-color">
         branding_watermark
-        </span>
+        </span>,
+        hasDropDown:true
     }
   },
   Format:{
     Text:{
         imgEle:<span class="material-icons-outlined image-color">
         format_bold
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Paragraph:{
         imgEle:<span class="material-icons-outlined image-color">
         view_headline
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Align:{
         imgEle:<span class="material-icons-outlined image-color">
         format_indent_increase
-        </span>
+        </span>,
+        hasDropDown:true
     },
     Line:{
         imgEle:<span class="material-icons-outlined image-color">
@@ -250,12 +265,14 @@ export const dropDownTabs = {
     'Add ons':{
         imgEle:<span class="material-icons-outlined image-color">
         post_add
-        </span>
+        </span>,
+        hasDropDown:true
     },
     'Apps Script':{
         imgEle:<span class="material-icons-outlined image-color">
         javascript
-        </span>
+        </span>,
+        hasDropDown:true
     },
   },
   Help:{

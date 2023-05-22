@@ -9,7 +9,7 @@ export default function Dropdown({ isOpen, setIsOpen, dropDownList }) {
               <span className="img-ele-box">{dropDownList[item].imgEle}{" "}</span>
               <span className="tab-title">{item}</span>
             </span>
-            <span class="material-icons image-color">arrow_right</span>
+            <span>{dropDownList[item].hasDropDown&&<span class="material-icons image-color">arrow_right</span>}</span>
           </div>
         ))}
     </div>
